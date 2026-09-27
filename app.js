@@ -1,0 +1,1 @@
+function go(id){document.querySelectorAll('section').forEach(s=>s.classList.add('hide'));document.getElementById(id).classList.remove('hide');scrollTo(0,0)}

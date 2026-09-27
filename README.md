@@ -1,0 +1,1 @@
+S Maney Earn — clean UI foundation. Home, Mining and Tasks screens only. No backend/earning logic yet.
