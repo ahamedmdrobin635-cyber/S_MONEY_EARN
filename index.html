@@ -1,1 +1,43 @@
-<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>S Maney Earn</title><link rel="stylesheet" href="style.css"></head><body><main><header><b>🪙 S Maney <em>Earn</em></b><span>🔔</span></header><section id="home"><div class="user">👤 <div><h2>Hello, Robin</h2><small>@robinahamed · ✓ Verified</small></div></div><div class="card balance">Total Balance<h1>0.00 <i>SMC</i></h1><div class="stats"><span>Today Earned<br><b>0.00</b></span><span>Total Earned<br><b>0.00</b></span><span>Referral Bonus<br><b>0.00</b></span></div></div><div class="card"><h3>🚀 Start Your Journey</h3><small>Complete tasks, earn SMC!</small></div><h3>Quick Access</h3><div class="grid"><button onclick="go('mining')">⛏<small>Mining</small></button><button onclick="go('tasks')">☷<small>Tasks</small></button><button>♣<small>Referral</small></button><button>▣<small>Withdraw</small></button></div></section><section id="mining" class="hide"><h2>⛏ Mining</h2><div class="hero"><h1>MINING</h1><p>Mine · Earn · Withdraw</p></div><div class="card">Mining Status: <b class="green">● Ready</b><hr>Mining Power: <b>0.00 SMC</b></div><div class="card center"><div class="coin">S</div><button class="start">⚡ Start Mining</button></div></section><section id="tasks" class="hide"><h2>☷ Tasks</h2><div class="hero"><h1>Complete Tasks</h1><p>Earn more SMC</p></div><div class="task card">▶ <b>Watch Videos</b> ›</div><div class="task card">📣 <b>Follow Channels</b> ›</div><div class="task card">➤ <b>Join Groups</b> ›</div><div class="task card">👍 <b>Like & Share</b> ›</div></section><nav><button onclick="go('home')">⌂<small>Home</small></button><button onclick="go('mining')">⛏<small>Mining</small></button><button onclick="go('tasks')">☷<small>Tasks</small></button><button>♣<small>Referral</small></button><button>●<small>Profile</small></button></nav></main><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0f0d" />
+  <title>S MONEY EARN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <div class="brand">S MONEY <span>EARN</span></div>
+        <div class="status" id="status">Connecting to Telegram…</div>
+      </div>
+    </header>
+
+    <section class="card profile-card">
+      <div class="avatar" id="avatar">S</div>
+      <div>
+        <h2 id="name">Loading…</h2>
+        <p id="username">Please wait</p>
+      </div>
+    </section>
+
+    <section class="card balance-card">
+      <p>Total Balance</p>
+      <h1><span id="balance">0.00</span> <small>SMC</small></h1>
+      <div class="stats">
+        <div><span>Total Earned</span><b id="totalEarned">0.00</b></div>
+        <div><span>Mining Rate</span><b id="miningRate">0.00</b></div>
+        <div><span>Referral Bonus</span><b id="referralBonus">0.00</b></div>
+      </div>
+    </section>
+
+    <section id="message" class="message">Opening your Telegram account…</section>
+  </main>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
